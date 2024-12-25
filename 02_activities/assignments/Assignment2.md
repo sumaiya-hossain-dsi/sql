@@ -60,10 +60,10 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 ![CUSTOMER_ADDRESS](./CUSTOMER_ADDRESSES_Type1_Type2.png)
 
-```
-[ANSWER]
-Both architectures have the fields Customer_ID, Address Lines 1 & 2, City, State/Province, Postal Code and Country. In Type 1 architecture, any of these fields except for Customer_ID can be updated with new values by replacing the same row. However, in Type 2 architecture, a new row would be created with the same Customer_ID (which is no longer a unique field nor a primary key) and additonal fields are made necessary such as IsCurrent (to quickly find the current address) and CustomerAddressID (as the new unique primary key) as well as StartDate and EndDate.   
-```
+
+> [ANSWER]
+> Both architectures have the fields Customer_ID, Address Lines 1 & 2, City, State/Province, Postal Code and Country. In Type 1 architecture, any of these fields except for Customer_ID can be updated with new values by replacing the same row. However, in Type 2 architecture, a new row would be created with the same Customer_ID (which is no longer a unique field nor a primary key) and additonal fields are made necessary such as IsCurrent (to quickly find the current address) and CustomerAddressID (as the new unique primary key) as well as StartDate and EndDate.   
+
 
 ***
 
