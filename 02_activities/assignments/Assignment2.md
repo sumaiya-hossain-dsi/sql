@@ -48,13 +48,21 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
 
+#### ERD after Prompt 1 and 2
+![Bookstore ERD](/Bookstore_ERD.png)
+
+
+
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
+![CUSTOMER_ADDRESS](/CUSTOMER_ADDRESSES_Type1_Type2.png)
+
 ```
-Your answer...
+[ANSWER]
+Both architectures have the fields Customer_ID, Address Lines 1 & 2, City, State/Province, Postal Code and Country. In Type 1 architecture, any of these fields except for Customer_ID can be updated with new values by replacing the same row. However, in Type 2 architecture, a new row would be created with the same Customer_ID (which is no longer a unique field nor a primary key) and additonal fields are made necessary such as IsCurrent (to quickly find the current address) and CustomerAddressID (as the new unique primary key) as well as StartDate and EndDate.   
 ```
 
 ***
