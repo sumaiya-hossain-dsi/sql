@@ -49,7 +49,7 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
 
 #### ERD after Prompt 1 and 2
-![Bookstore ERD](/Bookstore_ERD.png)
+![Bookstore ERD](./Bookstore_ERD.png)
 
 
 
@@ -58,7 +58,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
-![CUSTOMER_ADDRESS](/CUSTOMER_ADDRESSES_Type1_Type2.png)
+![CUSTOMER_ADDRESS](./CUSTOMER_ADDRESSES_Type1_Type2.png)
 
 ```
 [ANSWER]
